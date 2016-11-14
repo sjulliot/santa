@@ -1,7 +1,17 @@
+#!/usr/bin/env python3
+
+'''
+Generer une chaine de cadeaux et envoyer un mail aux joueurs pour
+leur désigner leur destinataire.
+'''
+
 import random
 from collections import namedtuple
 import smtplib
 from email.mime.text import MIMEText
+
+__author__ = 'Sebastien Julliot'
+__email__ = 'julliot@ljll.math.upmc.fr'
 
 User = namedtuple('User', ['first', 'mail'])
 
