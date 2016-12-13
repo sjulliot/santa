@@ -29,6 +29,7 @@ login = 'sebastien@jdlm.tech'
 passwd = ''
 
 server = smtplib.SMTP(smtp_server)
+server.starttls()
 server.login(login, passwd)
 
 def send_mail(user, give_to, msg, subject):
